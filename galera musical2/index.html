@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎵 Galería Musical 🎵</h1>
+        <p>Explora diferentes géneros musicales con imágenes y previews de canciones.</p>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <!-- Galería -->
+        <section class="galeria">
+            <div class="card" onclick="playSong('rock.mp3')">
+                <img src="images/poprock.jpg" alt="Rock">
+                <h3>Rock</h3>
+            </div>
+            <div class="card" onclick="playSong('pop.mp3')">
+                <img src="images/rock.jpg" alt="Pop">
+                <h3>Pop</h3>
+            </div>
+            <div class="card" onclick="playSong('jazz.mp3')">
+                <img src="images/jazz.jpg" alt="Jazz">
+                <h3>Jazz</h3>
+            </div>
+            <div class="card" onclick="playSong('clasica.mp3')">
+                <img src="images/pop.jpg" alt="Clásica">
+                <h3>Clásica</h3>
+            </div>
+        </section>
+
+        <!-- Reproductor -->
+        <section class="player">
+            <h2>Reproductor</h2>
+            <audio id="audioPlayer" controls>
+                <source src="audios/rock.mp3" type="audio/mpeg">
+                <source src="audios/pop.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+            <canvas id="visualizer"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: <b>Mario Magaña</b> - HTML5, CSS3 y JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

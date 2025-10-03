@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Galería Musical</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>🎵 Galería Musical 🎵</h1>
+        <p>Explora diferentes géneros musicales con imágenes y previews de canciones.</p>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="contactanos.html" class="active">Contáctanos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="contact-content">
+        <section class="contacto-info">
+            <h2>🤝 Ponte en Contacto</h2>
+            <p>¿Tienes alguna sugerencia, pregunta sobre el proyecto de informática o quieres colaborar? ¡Envíanos un mensaje! Tu opinión es vital para nuestro aprendizaje y mejora continua.</p>
+
+            <div class="contacto-grid">
+                
+                <div class="formulario-container">
+                    <h3>Formulario de Mensaje</h3>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Tu Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>📍 Nuestra Ubicación (Referencia)</h3>
+                    <p>Estamos desarrollando este proyecto desde San Salvador, El Salvador. Nuestra referencia de ubicación es la Parroquia San Marcos Evangelista en San Marcos.</p>
+
+                    <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.568461741544!2d-89.17647222449171!3d13.670517586687063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f76d91a62d057a7%3A0x868b209d6f6e1f0e!2sParroquia%20San%20Marcos%20Evangelista!5e0!3m2!1ses!2ssv!4v1689000000000!5m2!1ses!2ssv" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <p class="direccion">
+                        <i class="fas fa-map-marker-alt"></i> San Marcos, San Salvador, El Salvador.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: <b>MM</b> - HTML5, CSS3 y JavaScript</p>
+    </footer>
+
+</body>
+</html>
